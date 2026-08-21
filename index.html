@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabian Ember | Authentic Flavors</title>
+    <style>
+        :root {
+            --primary: #c2410c; /* Deep orange/ember */
+            --dark: #1f2937;
+            --light: #f3f4f6;
+            --white: #ffffff;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        /* Navbar */
+        nav {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav h1 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--primary);
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+        .btn {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #9a3412;
+        }
+        /* Section Styling */
+        section {
+            padding: 4rem 5%;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--dark);
+        }
+        /* Features / About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        .about-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .about-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        /* Menu Highlight */
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .menu-item {
+            background: var(--white);
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .menu-item h4 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .menu-item span {
+            color: var(--primary);
+            font-weight: bold;
+        }
+        /* Footer / Contact */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 3rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        footer h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+            color: #ccc;
+        }
+        .rating {
+            font-size: 1.2rem;
+            color: #fbbf24;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>ARABIAN EMBER</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <h2>Taste the Fire</h2>
+        <p>Experience the authentic taste of Arabian cuisine right in the heart of Balasore. Casual dining perfect for families, groups, and solo foodies.</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">Why Dine With Us?</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Great Atmosphere</h3>
+                <p>Enjoy a casual and relaxed environment perfect for both quick solo bites and large family dinners. We're very kid-friendly!</p>
+            </div>
+            <div class="about-card">
+                <h3>Top Rated Quality</h3>
+                <p>We pride ourselves on our 4.6/5 star rating, backed by the love and reviews of our amazing local community.</p>
+            </div>
+            <div class="about-card">
+                <h3>Fresh Ingredients</h3>
+                <p>Everything is prepared fresh daily, bringing the warm, ember-grilled flavors of the Middle East straight to your table.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" style="background-color: var(--white);">
+        <h2 class="section-title">Menu Highlights</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h4>Chicken Mandi <span>₹---</span></h4>
+                <p>Traditional slow-cooked chicken served over fragrant, spiced rice with our signature garlic sauce.</p>
+            </div>
+            <div class="menu-item">
+                <h4>Ember Grilled Kebab <span>₹---</span></h4>
+                <p>Juicy, marinated skewers grilled perfectly over hot embers, served with fresh pita and hummus.</p>
+            </div>
+            <div class="menu-item">
+                <h4>Classic Shawarma <span>₹---</span></h4>
+                <p>Thinly sliced roasted meat wrapped in warm flatbread with pickles and tahini.</p>
+            </div>
+            <div class="menu-item">
+                <h4>Arabian Platter <span>₹---</span></h4>
+                <p>A grand mix of our best grills, ideal for sharing with your group.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <p><em>*Visit us to see our full menu and daily specials!*</em></p>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact">
+        <div>
+            <h3>ARABIAN EMBER</h3>
+            <p>Infront of Sambad office, Satyanagar St,</p>
+            <p>Near site for judicial hub, Satyanagar, Angaragadia,</p>
+            <p>Mallikashpur, Balasore, Odisha 756001</p>
+            <div class="rating">
+                ★ 4.6 / 5 Highly Rated!
+            </div>
+        </div>
+        <div>
+            <h3>Opening Hours</h3>
+            <p><strong>Monday:</strong> Closed</p>
+            <p><strong>Tuesday - Sunday:</strong> 6:30 AM - 10:30 PM</p>
+        </div>
+        <div>
+            <h3>Find Us</h3>
+            <p>Planning to visit with a group? Stop by during our working hours to reserve your spot.</p>
+            <br>
+            <a href="https://maps.app.goo.gl/BRQTPU4ZYqU6dXYs9" target="_blank" class="btn" style="padding: 8px 15px; font-size: 0.9rem;">View on Google Maps</a>
+        </div>
+    </footer>
+
+</body>
+</html>
